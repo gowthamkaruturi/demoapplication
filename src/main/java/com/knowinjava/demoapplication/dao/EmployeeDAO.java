@@ -30,4 +30,9 @@ public class EmployeeDAO {
     String sql = "INSERT INTO EMPLOYEE(ID, NAME, DEPARTMENT, ROLE) values(?,?,?,?)";
     return jdbcTemplate.update(sql, new Object[] {employee.getId(), employee.getName(), employee.getDepartment(), employee.getRole()});
   }
+  /*TODO:
+  implement delete a record 
+  update a record of existing one 
+    `change any available record`
+  */
 }
